@@ -20,7 +20,7 @@ function blurring() {
     }
 
     loadText.innerText = `${load}%` //assigns the text element on the page to the counter variable
-    loadText.style.opacity = scale(load, 0, 100, 1, 0) //causes text to fade out (opacity from 1 to 0) while load counts to 100
+    loadText.style.opacity = scale(load, 0, 100, 0.75, 0) //causes text to fade out (opacity from 1 to 0) while load counts to 100
     circle.style.opacity = scale(load, 0, 100, 1, 0) //circle fades
     bg.style.filter = `blur(${scale(load, 0, 100, 25, 0)}px)` //background scales from 25% blur to 0 while load counts from 0 to 100
 
